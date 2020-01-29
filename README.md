@@ -25,3 +25,17 @@ let p = new Promise ((resolve, reject)=>{
 })
 
 ```
+
+```java
+
+class NewChange {
+
+    public static void main(String [] args) {
+        
+        System.out.println("This is a test.");
+    }
+
+}
+
+
+```
