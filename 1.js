@@ -1,31 +1,11 @@
-function countBits(n) {
+const http = require('http');
 
-    let result = 0;
+const server = http.createServer(function (req, res) {
+    console.log('request coming...', req.url);
 
-    //do sth here
-    let b = (n).toString(2);
+    res.write('200 - OK');
+    res.end();
+});
 
-    // console.log('b is ...', b);
-
-    // b.forEach(item => {
-    //     if (item === '1') {
-    //         result++;
-    //     }
-    // })
-
-    // console.log('b is ', typeof (b));
-
-    console.log(`binary of ${n} is ${b}`);
-
-    for (let i = 0; i < b.length; i++) {
-        if (b[i] === '1') {
-            result++;
-        }
-    }
-
-
-    return result;
-}
-
-let o = countBits(9651254);
-console.log(`It has ${o} of 1`);
+console.log('Server is running...');
+server.listen(3050);

@@ -20,3 +20,5 @@ let genObj = step();
 genObj.next();
 genObj.next();
 // genObj.next();
+
+module.exports = step();

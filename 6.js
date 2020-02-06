@@ -1,3 +1,5 @@
+const step = require('./7');
+
 const arr = [12, 32, 8, 19, 54, 23, 12];
 
 const result = arr.reduce((pre, cur, idx) => {
